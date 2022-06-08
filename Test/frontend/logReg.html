@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login/Register</title>
+</head>
+<body>
+    <div id=header>
+        <h1>Welcom to Gulag</h1>
+    </div>
+    <div id="container">
+        <div id=registerBlock>
+            <div id="column">
+                <div id="title">Register</div>
+                <p id="error">Create new account</p>
+                <input type="text" name="" id="login" placeholder="Login" minlength="3" maxlength="15">
+                
+                <input type="text" name="" id="password" placeholder="Password" minlength="3" maxlength="15">
+                
+                <input type="text" name="" id="fullName" placeholder="Full Name" minlength="3" maxlength="15">  
+                
+                <select name="" id="roleId">
+                    <option value="1">Student</option>
+                    <option value="2">Teacher</option>
+                </select>
+                
+                <button id="createUser">Sign Up</button>
+                <p>Already have an account? <span id="removeBtn">Sign in</span></p>
+            </div>
+            <div id="loginBlock">
+                <div id="title">Sign in</div>
+                <input type="text" name="" id="loginLog" placeholder="Login" minlength="3" maxlength="15">
+                <input type="text" name="" id="passwordLog" placeholder="Password" minlength="3" maxlength="15">
+                <p id="errorLog">Error</p>
+                <br> <br>
+                <button id="loginBtn">Sign in</button>
+                <p>Don't have an account?<br> <span id="removeBtn2" >Create new account</span></p>
+            </div>
+        </div>
+    </div>
+    <script src="logReg.js"></script>
+</body>
+</html>
